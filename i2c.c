@@ -21,7 +21,7 @@ void i2cSend(unsigned char Data);
 
 int main(void)
 {
-  WDTCTL = WDTPW + WDTHOLD;         // Stop WDT
+  WDTCTL = WDTPW + WDTHOLD;         	// Stop WDT
 
   i2cSetup(0x69);			//setup the I2C connection
   result = i2cRequest(0x6B);		//look if sensor in sleep mode (result = 0x40)
