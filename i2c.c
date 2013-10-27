@@ -3,6 +3,8 @@
 /*
  *  * Sensortest
  *  * http://flyinventilator.wordpress.com - maximilian reuter
+ *	* All code available under https://github.com/mreuterCode/flyinventilator
+
  */
 
 unsigned char TransmittedData;

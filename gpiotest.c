@@ -3,6 +3,7 @@
 /*
  * 	* GPIO Test
  *  * http://flyinventilator.wordpress.com - maximilian reuter
+ *	* All code available under https://github.com/mreuterCode/flyinventilator
  */
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
