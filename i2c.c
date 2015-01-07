@@ -94,7 +94,7 @@ __interrupt void USCIAB0TX_ISR(void)
 			phase = 2;
 			UCB0TXBUF = TransmittedData;		//put data on the bus
 
-		}else if(phase == 2)
+		}else if(phase == 2){
 			IFG2 &= ~(UCB0TXIFG + UCB0RXIFG);	//disable RX and TX interrupts
 			UCB0CTL1 |= UCTXSTP;			//send STOP condition
 			__bic_SR_register_on_exit(CPUOFF);	//exit LPM
