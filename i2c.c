@@ -123,7 +123,7 @@ __interrupt void USCIAB0TX_ISR(void)
 		else if (phase == 2)
 		{
 			ReceivedData = UCB0RXBUF;		//read sensor-data from the bus
-			IFG2 &= ~(UCB0TXIFG + UCB0RXIFG)	//disable interrupts
+			IFG2 &= ~(UCB0TXIFG + UCB0RXIFG);	//disable interrupts
 			__bic_SR_register_on_exit(CPUOFF);	//exit LPM
 
 		}
